@@ -94,7 +94,7 @@ class InjectService
         if(strpos($fileContent,$contentToAdd)){
             return true;
         }else{
-            return true;
+            return false;
         }
     }
 }
