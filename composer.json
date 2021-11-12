@@ -1,0 +1,19 @@
+{
+    "name": "faisal/shopify-inject",
+    "description": "This package is to inject the content into the shopify liquid files through the shopify admin api.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Faisal Arif",
+            "email": "faial.arif@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shopify\\Inject\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
