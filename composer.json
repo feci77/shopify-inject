@@ -15,5 +15,7 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "osiset/laravel-shopify": "^17.1"
+    }
 }
