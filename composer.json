@@ -1,6 +1,6 @@
 {
     "name": "faisal/shopify-inject",
-    "description": "This package is to inject the content into the shopify liquid files through the shopify admin api.",
+    "description": "This package is to inject the content into the shopify liquid files through the shopify admin api. Created for my project an package development. If it is helpful, lets build it more.",
     "type": "library",
     "license": "MIT",
     "authors": [
