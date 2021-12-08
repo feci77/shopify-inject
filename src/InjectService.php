@@ -75,13 +75,16 @@ class InjectService
      */
     private function prepareContent( $search, $contentToAdd, $after = true )
     {
-
         if($after){
             $contentToAdd = $search.$contentToAdd;
         }else{
             $contentToAdd = $contentToAdd.$search;
         }
-        $this->globalContent = str_replace($search, $contentToAdd, $this->globalContent);
+        if(!empty($this->globalContent)){
+            $this->globalContent = str_replace($search, $contentToAdd, $this->globalContent);
+        }else{
+            $this->globalContent = $contentToAdd;
+        }
     }
 
     /**
