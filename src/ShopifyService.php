@@ -43,9 +43,13 @@ class ShopifyService
      */
     public function getThemeAsset($_themeId, $_assetPath)
     {
-        return $this->call($this->baseUrl.'/themes/'.$_themeId.'/assets.json',[
+        $response = $this->call($this->baseUrl.'/themes/'.$_themeId.'/assets.json',[
             'asset[key]' => $_assetPath
-        ])['asset']['value'];
+        ]);
+        if(isset($response['asset'])){
+            return $response['asset']['value'];
+        }
+        return null;
     }
 
     /**
